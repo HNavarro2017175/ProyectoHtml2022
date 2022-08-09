@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Venta de Autos</title>
+    <link rel="stylesheet" href="image/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="image/LogoEmpresa.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Egomez-2021400</a></li>
+                <li><a href="#">Hnavarro-2017175</a></li>
+            </ul>
+        </header>
+        <div class="content"> 
+            <div class="textBox">    
+                <h2>Venta de Autos super Deportivos <br><span>CARSVENT</span></h2>
+                <p>Venta de Autos de todas las marcas super deportivos desde ferraris, lamborghini, mclaren entre muchos</p>
+            <a href="#">Mas información</a>
+        </div>
+            <div class="imgBox">
+            <img src="image/mclaren.png" class="mclaren">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/mclaren2.png" onclick="imgSlider('image/mclaren.png');changeCircleColor('#F9DA00')"></li>
+            <li><img src="image/lamborghini.png" onclick="imgSlider('image/lamborghini2.png');changeCircleColor('#00CDF9')"></li>
+            <li><img src="image/ferrari.png" onclick="imgSlider('image/ferrari2.png');changeCircleColor('#F90000')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="image/facebook.png"></a></li>
+            <li><a href="#"><img src="image/twitter.png"></a></li>
+            <li><a href="#"><img src="image/instagram.png"></a></li>
+        </ul> 
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+        document.querySelector(' .mclaren').scr = anything;
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector(' .mclaren');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
